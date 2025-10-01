@@ -1,0 +1,18 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color: #eaeaea;
+  --bg-color: crimson;
+  --text-color: orange;
+}
+
+body {
+  height: 150vh;
+  font-family: ;
+  background-color: var(--color);
+}
