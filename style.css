@@ -7,12 +7,220 @@ html {
 
 :root {
   --color: #eaeaea;
-  --bg-color: crimson;
-  --text-color: orange;
+  --bg-color: #d32f2f;
+  --text-color: #2c2c2c;
 }
 
 body {
-  height: 150vh;
-  font-family: ;
-  background-color: var(--color);
+  height: 100vh;
+  font-family: "Roboto Condensed", sans-Serif;
+  font-weight: 300;
+  background-color: red;
+}
+
+.display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin: 0 auto;
+  height: 100%;
+  max-width: 500px;
+  background-color: #eaeaea;
+  display: flex;
+}
+
+header {
+  width: 30%;
+  height: 100%;
+  background-color: var(--text-color);
+  padding-top: 30px;
+}
+
+header .title {
+  text-align: center;
+}
+
+.title h1 {
+  font-size: 1.1rem;
+  color: var(--color);
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-shadow: 1px 1px 2px #555;
+}
+
+.title-dura {
+  animation-duration: 2s !important;
+}
+
+.title h1:hover {
+  text-shadow: 2px 2px 4px var(--bg-color);
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  list-style-type: none;
+  cursor: pointer;
+  border-left: 2px solid var(--bg-color);
+  padding: 10px 0px;
+  width: 70%;
+  gap: 5px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 7px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color);
+  letter-spacing: 1px;
+  transition: .3s ease-in-out;
+}
+
+nav ul li span {
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-color);
+  position: absolute;
+  margin-left: 135px;
+  transition: .3s ease-in-out;
+}
+
+ul li:hover span {
+  margin-left: 0;
+}
+
+ul li:hover a {
+  color: var(--color);
+  z-index: 999;
+}
+
+ul li:hover {
+  border: 0;
+}
+
+.li-delay1 {
+  animation-delay: 0.2s;
+}
+
+.li-delay2 {
+  animation-delay: 0.6s;
+}
+
+.li-delay3 {
+  animation-delay: 1s;
+}
+
+main {
+  padding-top: 30px;
+  width: 100%;
+}
+
+main .profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
+}
+
+main .profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+
+.profile h2 {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: var(--text-color);
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px white;
+}
+
+main .sosmed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+
+main .bg-sosmed {
+  width: 100%;
+  height: 120px;
+  border: 2px solid white;
+}
+
+main .card-sosmed {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-sosmed .list-sosmed {
+  gap: 20px;
+}
+
+.list-sosmed a {
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 700;
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 7px;
+  color: white;
+}
+
+.ig {
+  background: linear-gradient(45deg, 
+    #feda75,   /* kuning pastel */
+    #fa7e1e,   /* oranye */
+    #d62976,   /* pink */
+    #962fbf,   /* ungu */
+    #4f5bd5    /* biru keunguan */
+  );
+}
+
+.wa {
+  background: linear-gradient(135deg, #25d366, #128c7e);
+}
+
+.tt {
+  background: radial-gradient(circle at 80% center,
+    #25f4ee 0%, 
+    #fe2c55 25%, 
+    #000000 70%
+  );
+}
+
+.fb {
+  background: linear-gradient(135deg, #1877f2, #0e5a8a);
 }
